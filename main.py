@@ -40,14 +40,6 @@ try:
 except Exception:
     _CLAN_PB_AVAILABLE = False
 
-# main.py এর top-এ যোগ করুন
-try:
-    import uvloop
-    uvloop.install()
-    print("[INIT] ✅ uvloop installed")
-except ImportError:
-    print("[INIT] ⚠️ uvloop not available — using default asyncio")
-    
 # ==================== CONFIG ====================
 WEB_HOST = "0.0.0.0"
 WEB_PORT = 8080
